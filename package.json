@@ -1,0 +1,29 @@
+{
+  "name": "node-project-template",
+  "version": "1.0.0",
+  "description": "Jump start to creating a nodejs project with testing, documentation, and reports.",
+  "main": "index.js",
+  "scripts": {
+    "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/metrics lib",
+    "jsdoc": "jsdoc -c ./jsdoc.json",
+    "generate-docs": "npm run test && js-code-metric && jsdoc ",
+    "test": "jest --coverage --coverageDirectory=\"./docs/\"",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SethVandebrooke/node-project-template.git"
+  },
+  "keywords": [],
+  "author": "Seth Vandebrooke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SethVandebrooke/node-project-template/issues"
+  },
+  "homepage": "https://github.com/SethVandebrooke/node-project-template#readme",
+  "devDependencies": {
+    "jest": "^25.5.3",
+    "js-code-metric": "^1.0.76",
+    "jsdoc": "^3.6.4"
+  }
+}
