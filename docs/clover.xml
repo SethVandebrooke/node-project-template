@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1588539279643" clover="3.2.0">
-  <project timestamp="1588539279643" name="All files">
+<coverage generated="1588975210764" clover="3.2.0">
+  <project timestamp="1588975210764" name="All files">
     <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
-    <file name="calc.js" path="D:\Projects\node-project-template\lib\calc.js">
+    <file name="calc.js" path="D:\Projects\node-project-template\src\calc.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <line num="9" count="1" type="stmt"/>
       <line num="22" count="1" type="stmt"/>
