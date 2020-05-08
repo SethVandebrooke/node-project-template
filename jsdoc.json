@@ -4,7 +4,7 @@
     ],
     "recurseDepth": 10,
     "source": {
-        "include": ["./src/","./docs-homepage.md"],
+        "include": ["./src/","./README.md"],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },
@@ -20,7 +20,7 @@
         "theme": "Lumen"
     },
     "opts": {
-        "template": "./node_modules/ink-docstrap/template",
+        "template": "./docs-template",
         "encoding": "utf8",
         "destination": "./docs/",
         "recurse": true,
