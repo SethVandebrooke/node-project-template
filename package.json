@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dependency-audit": "npm dedupe && npm prune && npm audit fix",
-    "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/metrics lib",
+    "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/metrics src",
     "jsdoc": "jsdoc -c ./jsdoc.json",
     "generate-docs": "npm run test && npm run js-code-metric && npm run jsdoc ",
     "test": "jest --coverage --coverageDirectory=\"./docs/\"",
