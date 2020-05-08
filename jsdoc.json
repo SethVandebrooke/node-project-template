@@ -1,7 +1,6 @@
 {
     "plugins": [
-        "plugins/markdown",
-        "plugins/summarize"
+        "plugins/markdown"
     ],
     "recurseDepth": 10,
     "source": {
@@ -15,10 +14,13 @@
         "dictionaries": ["jsdoc","closure"]
     },
     "templates": {
+        "systemName": "Calculator",
         "cleverLinks": false,
-        "monospaceLinks": false
+        "monospaceLinks": false,
+        "theme": "Lumen"
     },
     "opts": {
+        "template": "./node_modules/ink-docstrap/template",
         "encoding": "utf8",
         "destination": "./docs/",
         "recurse": true,

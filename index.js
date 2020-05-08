@@ -1,4 +1,4 @@
-var Calc = require('./lib/calc');
+var Calc = require('./src/calc');
 
 var calculator = new Calc();
 

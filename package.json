@@ -1,13 +1,15 @@
 {
-  "name": "node-project-template",
+  "name": "calculator",
   "version": "1.0.0",
   "description": "Jump start to creating a nodejs project with testing, documentation, and reports.",
   "main": "index.js",
   "scripts": {
+    "dependency-audit": "npm dedupe && npm prune && npm audit fix",
     "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/metrics lib",
     "jsdoc": "jsdoc -c ./jsdoc.json",
     "generate-docs": "npm run test && js-code-metric && jsdoc ",
     "test": "jest --coverage --coverageDirectory=\"./docs/\"",
+    "build": "babel src -d temp && grunt",
     "start": "node index.js"
   },
   "repository": {
@@ -24,6 +26,15 @@
   "devDependencies": {
     "jest": "^25.5.3",
     "js-code-metric": "^1.0.76",
-    "jsdoc": "^3.6.4"
+    "jsdoc": "^3.6.4",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "ink-docstrap": "^1.3.2"
   }
 }
