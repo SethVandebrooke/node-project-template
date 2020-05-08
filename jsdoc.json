@@ -4,7 +4,7 @@
     ],
     "recurseDepth": 10,
     "source": {
-        "include": ["./src/","./docs-homepage.md"],
+        "include": ["./src/","./docs-homepage.md","./package.json"],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },
