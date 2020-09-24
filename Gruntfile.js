@@ -6,11 +6,12 @@ module.exports = function(grunt) {
       
       uglify: {
         options: {
-          banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+          banner: '/*! <%= pkg.name %> v<%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+          sourceMap: true
         },
         build: {
-          src: 'dist/<%= pkg.name %>.js',
-          dest: 'dist/<%= pkg.name %>.min.js'
+          src: 'dist/<%= pkg.name %>-v<%= pkg.version %>.js',
+          dest: 'dist/<%= pkg.name %>-v<%= pkg.version %>.min.js'
         }
       }, 
       
@@ -19,7 +20,7 @@ module.exports = function(grunt) {
           src: [
               'temp/calc.js',
             ],
-          dest: 'dist/<%= pkg.name %>.js',
+          dest: 'dist/<%= pkg.name %>-v<%= pkg.version %>.js',
         },
       }
 
