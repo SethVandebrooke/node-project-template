@@ -4,11 +4,11 @@
   "description": "Jump start to creating a nodejs project with testing, documentation, and reports.",
   "main": "index.js",
   "scripts": {
-    "dependency-audit": "npm dedupe && npm prune && npm audit fix",
-    "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/metrics src",
+    "dependency-audit": "npm dedupe && npm prune && npm audit",
+    "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/dev-docs/metrics src",
     "jsdoc": "jsdoc -c ./jsdoc.json",
     "generate-docs": "npm run test && npm run js-code-metric && npm run jsdoc ",
-    "test": "jest --coverage --coverageDirectory=\"./docs/\"",
+    "test": "jest --coverage --coverageDirectory=\"./docs/dev-docs\"",
     "build": "babel src -d temp && grunt",
     "start": "node index.js"
   },

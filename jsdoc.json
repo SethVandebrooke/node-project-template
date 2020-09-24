@@ -4,7 +4,7 @@
     ],
     "recurseDepth": 10,
     "source": {
-        "include": ["./src/","./README.md"],
+        "include": ["./src/","./docs/dev-docs-template/homepage.md"],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },
@@ -20,10 +20,10 @@
         "theme": "Lumen"
     },
     "opts": {
-        "template": "./docs-template",
+        "template": "./docs/dev-docs-template",
         "encoding": "utf8",
-        "destination": "./docs/",
+        "destination": "./docs/dev-docs/",
         "recurse": true,
-        "tutorials": "./tutorials/"
+        "tutorials": "./docs/tutorials/"
     }
 }
