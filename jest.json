@@ -1,0 +1,17 @@
+{
+  "name": "Calculator",
+  "reporters": [
+    "default",
+    [
+      "jest-stare",
+      {
+        "resultDir": "./docs/dev-docs/tests/",
+        "reportTitle": "Calculator",
+        "additionalResultsProcessors": [
+          "jest-junit"
+        ],
+        "coverageLink": "../lcov-report/index.html"
+      }
+    ]
+  ]
+}

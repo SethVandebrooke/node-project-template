@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'/>
+	<title>Home - Calculator</title>
+	<link type='text/css' rel='stylesheet' href='css/jsdoc-template.css'/>
+	<meta name="viewport" content="width=device-width,
+                        initial-scale=1"/>
+</head>
+<body data-gs='{"openPageHeader": "is-page-header-open", "searching": "is-searching"}'>
+	<div id='page-wrapper'>
+		<header id='page-header' data-gs-target='openPageHeader'>
+			
+			<h1 id='page-title'>
+				<a href="/">Calculator</a>
+			</h1>
+			
+			<nav id='content-nav'>
+				<header>
+					<div id='search'>
+						<div class='textfield-wrapper'>
+							<input type='search' name='q' placeholder='Search...' data-internal-search='#content-nav li a' data-gs-search='searching'/>
+						</div>
+					</div>
+				</header>
+				<h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><abbr title="Class">Cls</abbr> <a href="Calc.html">Calc</a></li></ul><h3>Tutorials</h3><ul><li><abbr title="Tutorial">Tut</abbr> <a href="tutorial-getting-started.html">Getting Started</a></li></ul>
+			</nav>
+		</header>
+		<div id='main-wrapper'>
+			<button id='page-header-opener' title='Toggle left bar' class='has-icon' data-css-icon='menu' type='button' data-gs-toggle='openPageHeader'>Toggle left bar</button>
+			<main id='content'>
+				<header>
+					<h1 id='content-title'>Home</h1>
+				</header>
+				
+
+
+
+    
+
+
+    <h3 style="float:right;margin:10px">v1.0.0</h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <article id='readme'><h1>Calculator</h1>
+<p>Calculator is a module that provides basic methods of calclulation.</p>
+<h2>Documentation</h2>
+<p>The out of the box documentation system uses <a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">JSDoc</a> to crawl through the src directory and generate reference documentation based on the JSDoc comments used in the source code. JSDoc is pre-configured to use the <a href="https://github.com/docstrap/docstrap" target="_blank" rel="noopener noreferrer">DocStrap</a> template which includes basic navigation and text search. By default, the homepage contains links that point to the auto generated reports.</p>
+<h4>Tutorials</h4>
+<p>Any tutorials (or guides) can be created by making Markdown, HTML, or XML files and placing them in the tutorials directory. For more information on configuring this feature, check out the JSDoc documentation: <a href="https://jsdoc.app/about-tutorials.html" target="_blank" rel="noopener noreferrer">JSDoc Tutorials</a></p>
+<h3>Reports</h3>
+<p>This project is automatically set up to use <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a> and <a href="https://www.npmjs.com/package/js-code-metric" target="_blank" rel="noopener noreferrer">JS Code Metric</a> to generate complexity, lint error, maintainability, error probability, and code coverage reports. These reports are very useful for getting a bird's eye view of your project as well as detail oriented information, alerts, and suggestions.</p>
+<p>A nice feature that JS Code Metric provides is tracking complexity and maintainability over time. It saves analysis data and generates charts to display the history of your project's progress.</p>
+<h3>Testing</h3>
+<p>By defualt, the pre-installed and configured testing suite is Jest. This can be changed, but keep in mind that Jest was chosen for a few reasons:</p>
+<ul>
+<li>Jest comes packed with istanbul for generating code coverage reports
+<ul>
+<li>The code coverage report is configured to output to the documentation website directory, and the homepage is already pointing to it.</li>
+</ul>
+</li>
+<li>Jest allows for multiple test writting styles, including Jasmine.</li>
+<li>Jest is especially good at clearly pointing out context when things break, better than anything else I've used for NodeJS.</li>
+</ul>
+<h3>Generating the documentation</h3>
+<p>The documentation generation is already pre-configured and ready to go, all you have to do is run the following command in the project directory: <code>npm run generate-docs</code></p>
+<h2>Project Commands</h2>
+<p>The project has a number of out of the box commands for performing a few handy operations.</p>
+<ul>
+<li><code>npm run start</code> does what you would expect: runs index.js</li>
+<li><code>npm run build</code> runs babel, converting all source code in the src directory to ES15, adds all files mentioned in the Gruntfile.js file together, and minifies the result (placing the final file in the dist directory).</li>
+<li><code>npm run dependency-audit</code> dedupes, prunes and fixes known dependecies issues</li>
+<li><code>npm run js-code-metric</code> generates the metric reports</li>
+<li><code>npm run jsdoc</code> generates the reference documentation</li>
+<li><code>npm run test</code> runs all tests and generates code coverage report</li>
+<li><code>npm run generate-docs</code> runs the last three commands, fully generating the documentation website</li>
+</ul>
+<hr>
+<h3>Credit</h3>
+<p>A big thank you to everyone who created and contributed to the following projects that made this one possible!</p>
+<ul>
+<li><a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">JSDoc</a></li>
+<li><a href="https://github.com/docstrap/docstrap" target="_blank" rel="noopener noreferrer">DocStrap</a></li>
+<li><a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a></li>
+<li><a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">Istanbul</a></li>
+<li><a href="https://www.npmjs.com/package/js-code-metric" target="_blank" rel="noopener noreferrer">JS Code Metric</a></li>
+<li><a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel</a></li>
+<li><a href="https://gruntjs.com/" target="_blank" rel="noopener noreferrer">Grunt</a></li>
+</ul></article>
+
+
+
+
+
+
+			</main>
+			<footer id='page-footer'>
+				<small>Documentation generated by <a href='https://github.com/jsdoc/jsdoc' rel='noreferrer noopener' target='_blank'>JSDoc 3.6.4</a>.</small>
+				<small style='margin-left: 1em;'>Design by <a
+                        href='https://github.com/AlexisPuga'
+                        target='_blank'
+                        rel="noopener noreferrer">Alexis Puga</a>.</small>
+			</footer>
+		</div>
+	</div>
+	<script src='js/jsdoc-template.js' async></script>
+	<script src='js/list.min.js'></script>
+	<script>
+		setTimeout(function() {
+			new List('searchSection', { valueNames: ['memberName','description']});
+		}, 500);
+	</script>
+	
+	<script src='js/prettify.min.js' async></script>
+	<link rel='stylesheet' type='text/css' href='css/tomorrow.min.css'/>
+	
+	
+</body>
+</html>

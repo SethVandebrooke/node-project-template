@@ -1,87 +1,42 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Calculator Index</title>
-
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
-
-	<link type="text/css" rel="stylesheet" href="styles/site.Lumen.css">
-
+	<meta charset='utf-8'/>
+	<title>Home - Calculator</title>
+	<link type='text/css' rel='stylesheet' href='css/jsdoc-template.css'/>
+	<meta name="viewport" content="width=device-width,
+                        initial-scale=1"/>
 </head>
-
-<body>
-
-<div class="navbar navbar-default navbar-fixed-top ">
-<div class="container">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="index.html">Calculator</a>
-		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-        </button>
-	</div>
-	<div class="navbar-collapse collapse" id="topNavigation">
-		<ul class="nav navbar-nav">
+<body data-gs='{"openPageHeader": "is-page-header-open", "searching": "is-searching"}'>
+	<div id='page-wrapper'>
+		<header id='page-header' data-gs-target='openPageHeader'>
 			
-			<li class="dropdown">
-				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="Calc.html">Calc</a></li>
-				</ul>
-			</li>
+			<h1 id='page-title'>
+				<a href="/">Calculator</a>
+			</h1>
 			
-			<li class="dropdown">
-				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="tutorial-getting-started.html">getting-started</a></li>
-				</ul>
-			</li>
-			
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="./metrics/display.html">Source Code Summary</a></li>
-					<li><a href="./metrics/index.html">Code Metrics</a></li>
-					<li><a href="./lcov-report/index.html">Code Converage</a></li>
-				</ul>
-			</li>
-		</ul>
-        
-            <div class="col-sm-3 col-md-3">
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        
-	</div>
-
-</div>
-</div>
+			<nav id='content-nav'>
+				<header>
+					<div id='search'>
+						<div class='textfield-wrapper'>
+							<input type='search' name='q' placeholder='Search...' data-internal-search='#content-nav li a' data-gs-search='searching'/>
+						</div>
+					</div>
+				</header>
+				<h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><abbr title="Class">Cls</abbr> <a href="Calc.html">Calc</a></li></ul><h3>Tutorials</h3><ul><li><abbr title="Tutorial">Tut</abbr> <a href="tutorial-getting-started.html">Getting Started</a></li><li><abbr title="Tutorial">Tut</abbr> <a href="tutorial-homepage.html">homepage</a></li></ul>
+			</nav>
+		</header>
+		<div id='main-wrapper'>
+			<button id='page-header-opener' title='Toggle left bar' class='has-icon' data-css-icon='menu' type='button' data-gs-toggle='openPageHeader'>Toggle left bar</button>
+			<main id='content'>
+				<header>
+					<h1 id='content-title'>Home</h1>
+				</header>
+				
 
 
-<div class="container" id="toc-content">
-<div class="row">
 
-	
-	<div class="col-md-8">
-	
-		<div id="main">
-			
-
-	
-	
+    
 
 
 
@@ -93,145 +48,112 @@
 
 
 
-	
-	
+    
+
+
+
+
+    <article id='readme'><h1>node-project-template</h1>
+<p>Jump start to creating a nodejs project with testing, documentation, and reports.</p>
+<h2>Documentation</h2>
+<p>The out of the box documentation system uses <a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">JSDoc</a> to crawl through the src directory and generate reference documentation based on the JSDoc comments used in the source code. JSDoc is pre-configured to use the <a href="https://github.com/docstrap/docstrap" target="_blank" rel="noopener noreferrer">DocStrap</a> template which includes basic navigation and searching capabilities. By default, the navigation includes the auto generated reports and source code walkthroughs. The walkthroughs are generated using <a href="https://www.npmjs.com/package/docco" target="_blank" rel="noopener noreferrer">docco</a>.</p>
+<h4>Tutorials</h4>
+<p>Any tutorials (or guides) can be created by making Markdown, HTML, or XML files and placing them in the tutorials directory. For more information on configuring this feature, check out the JSDoc documentation: <a href="https://jsdoc.app/about-tutorials.html" target="_blank" rel="noopener noreferrer">JSDoc Tutorials</a></p>
+<h3>Reports</h3>
+<p>This project is automatically set up with <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a>, <a href="https://www.npmjs.com/package/js-code-metric" target="_blank" rel="noopener noreferrer">JS Code Metric</a>, and <a href="https://www.npmjs.com/package/jest-stare" target="_blank" rel="noopener noreferrer">Jest Stare</a> to generate complexity, lint error, maintainability, error probability, code coverage, and test result reports. These reports are great for getting a <em>bird's eye view</em> of your project as well as detail oriented information, warnings, and suggestions.</p>
+<p>A nice feature that JS Code Metric provides is tracking complexity and maintainability <em>over time</em>. It saves analysis data and generates charts to display the history of your project's progress.</p>
+<h3>Testing</h3>
+<p>By defualt, the pre-installed and configured testing suite is Jest. This can be changed, but keep in mind that Jest was chosen for a few reasons:</p>
+<ul>
+<li>Jest comes packed with istanbul for generating code coverage reports
+<ul>
+<li>The code coverage report is configured to output to the documentation website directory, and the homepage is already pointing to it.</li>
+</ul>
+</li>
+<li>Jest allows for multiple test writting styles, including Jasmine.</li>
+<li>Jest is especially good at clearly pointing out context when things break, better than anything else I've used for NodeJS.</li>
+</ul>
+<h3>Generating the documentation</h3>
+<p>The documentation generation is already pre-configured and ready to go, all you have to do is run the following command in the project directory: <code>npm run generate-docs</code></p>
+<h2>Project Commands</h2>
+<p>The project has a number of out of the box commands for performing a few handy operations.</p>
+<ul>
+<li><code>npm run start</code> does what you would expect: runs index.js</li>
+<li><code>npm run build</code> runs babel, converting all source code in the src directory to ES15, adds all files mentioned in the Gruntfile.js file together, and minifies the result (placing the final file in the dist directory).</li>
+<li><code>npm run dependency-audit</code> dedupes, prunes and fixes known dependecies issues</li>
+<li><code>npm run js-code-metric</code> generates the metric reports</li>
+<li><code>npm run jsdoc</code> generates the reference documentation</li>
+<li><code>npm run test</code> runs all tests and generates code coverage report</li>
+<li><code>npm run generate-docs</code> runs the last three commands, fully generating the documentation website</li>
+</ul>
+<hr>
+<h3>Credit</h3>
+<p>A big thank you to everyone who created and contributed to the following projects that made this one possible!</p>
+<ul>
+<li><a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">JSDoc</a></li>
+<li><a href="https://github.com/docstrap/docstrap" target="_blank" rel="noopener noreferrer">DocStrap</a></li>
+<li><a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a></li>
+<li><a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">Istanbul</a></li>
+<li><a href="https://www.npmjs.com/package/js-code-metric" target="_blank" rel="noopener noreferrer">JS Code Metric</a></li>
+<li><a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel</a></li>
+<li><a href="https://gruntjs.com/" target="_blank" rel="noopener noreferrer">Grunt</a></li>
+</ul></article>
 
 
 
 
 
 
-
-
-
-
-
+			</main>
+			<footer id='page-footer'>
+				<small>Documentation generated by <a href='https://github.com/jsdoc/jsdoc' rel='noreferrer noopener' target='_blank'>JSDoc 3.6.4</a>.</small>
+				<small style='margin-left: 1em;'>Design by <a
+                        href='https://github.com/AlexisPuga'
+                        target='_blank'
+                        rel="noopener noreferrer">Alexis Puga</a>.</small>
+			</footer>
 		</div>
 	</div>
-
-	<div class="clearfix"></div>
-
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
-	
-
-</div>
-</div>
-
-
-    <div class="modal fade" id="searchResults">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Search results</h4>
-          </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div>
-
-
-<footer>
-
-
-<span class="jsdoc-message">
-	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a>
-	
-		on 2020-09-24T17:08:46-04:00
-	
-	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
-</span>
-</footer>
-
-<script src="scripts/docstrap.lib.js"></script>
-<script src="scripts/toc.js"></script>
-
-    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
-
-
-<script>
-$( function () {
-	$( "[id*='$']" ).each( function () {
-		var $this = $( this );
-
-		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
-	} );
-
-	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
-		var $this = $( this );
-
-		var example = $this.find( "code" );
-		exampleText = example.html();
-		var lang = /{@lang (.*?)}/.exec( exampleText );
-		if ( lang && lang[1] ) {
-			exampleText = exampleText.replace( lang[0], "" );
-			example.html( exampleText );
-			lang = lang[1];
-		} else {
-			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
-			lang = langClassMatch ? langClassMatch[1] : "javascript";
+	<script src="js/nav.config.js"></script>
+	<script>
+		function extendNavigation(navConfig) {
+			var navHTML = "";
+			for (var section in navConfig) {
+				navHTML += "<h3>"+section+"</h3>\n<ul>\n";
+				var badge = Object.assign({}, navConfig[section].badge);
+				delete navConfig[section].badge;
+				for (var title in navConfig[section]) {
+					var url = navConfig[section][title];
+					navHTML += "<li><abbr title=\""+badge.title+"\">"+badge.symbol+"</abbr>";
+					navHTML += "<a href=\""+url+"\" onclick=\"loadView()\">"+title+"</a></li>";
+				}
+				navHTML += "</ul>\n";
+			}
+			document.getElementById('content-nav').innerHTML += navHTML;
 		}
 
-		if ( lang ) {
-
-			$this
-			.addClass( "sunlight-highlight-" + lang )
-			.addClass( "linenums" )
-			.html( example.html() );
-
+		extendNavigation(navigation);
+	</script>
+	<script src='js/jsdoc-template.js' async></script>
+	<script src='js/list.min.js'></script>
+	<script>
+		setTimeout(function() {
+			new List('searchSection', { valueNames: ['memberName','description']});
+		}, 500);
+		function loadView() {
+			setTimeout(function() {
+				var url = window.location.href.split('#')[1];
+				document.getElementById('content').innerHTML = "<iframe src=\""+url+"\" style=\"width:100%;height:100vh;\" seamless></iframe>";
+			}, 100);
 		}
-	} );
-
-	Sunlight.highlightAll( {
-		lineNumbers : false,
-		showMenu : true,
-		enableDoclinks : true
-	} );
-
-	$.catchAnchorLinks( {
-        navbarOffset: 10
-	} );
-	$( "#toc" ).toc( {
-		anchorName  : function ( i, heading, prefix ) {
-			return $( heading ).attr( "id" ) || ( prefix + i );
-		},
-		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
-		showAndHide : false,
-		smoothScrolling: true
-	} );
-
-	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
-	$( '.dropdown-toggle' ).dropdown();
-
-    $( "table" ).each( function () {
-      var $this = $( this );
-      $this.addClass('table');
-    } );
-
-} );
-</script>
-
-
-
-<!--Navigation and Symbol Display-->
-
-
-<!--Google Analytics-->
-
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            SearcherDisplay.init();
-        });
-    </script>
-
-
+		if (window.location.href.split('#./').length > 1) {
+			laodView();
+		}
+	</script>
+	
+	<script src='js/prettify.min.js' async></script>
+	<link rel='stylesheet' type='text/css' href='css/tomorrow.min.css'/>
+	
+	
 </body>
 </html>

@@ -1,4 +1,8 @@
 
+// ### Description
+// This is an *example* nodejs module.
+// It's **only** purpose is to present the functionality of this system.
+
 /**
  * Calcualtor instance
  * @constructor
@@ -6,6 +10,8 @@
  * var calculator = new Calc();
  */
 function Calc () {
+
+    // create self reference for scoping
     var self = this;
 
     /**
@@ -20,6 +26,7 @@ function Calc () {
      * calculator.add(2, 2); // 4
      */
     self.add = function (a, b) {
+        // add a and b together
         return a + b;
     };
 
@@ -35,6 +42,7 @@ function Calc () {
      * calculator.subtract(4, 2) // 2
      */
     self.subtract = function (a, b) {
+        // subtract b from a
         return a - b;
     }
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>calc.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="..\docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>calc.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <h3 id="description">Description</h3>
+<p>This is an <em>example</em> nodejs module.
+It’s <strong>only</strong> purpose is to present the functionality of this system.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="hljs-comment">/**
+ * Calcualtor instance
+ * <span class="hljs-doctag">@constructor</span>
+ * <span class="hljs-doctag">@example</span>
+ * var calculator = new Calc();
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Calc</span> (<span class="hljs-params"></span>) </span>{</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>create self reference for scoping</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+
+    <span class="hljs-comment">/**
+     * Add two numbers together
+     * @name Calc#add
+     * @function
+     * @param {number} a first number to add
+     * @param {number} b second number to add
+     * @returns {number}
+     * @example
+     * var calculator = new Calc();
+     * calculator.add(2, 2); // 4
+     */</span>
+    self.add = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">a, b</span>) </span>{</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>add a and b together</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="hljs-keyword">return</span> a + b;
+    };
+
+    <span class="hljs-comment">/**
+     * Subtract one number from another
+     * @name Calc#subtract
+     * @function
+     * @param {number} a the number to start with
+     * @param {number} b the number to subtract from the first number
+     * @returns {number}
+     * @example
+     * var calculator = new Calc();
+     * calculator.subtract(4, 2) // 2
+     */</span>
+    self.subtract = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">a, b</span>) </span>{</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>subtract b from a</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>        <span class="hljs-keyword">return</span> a - b;
+    }
+}
+
+<span class="hljs-built_in">module</span>.exports = Calc;</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
