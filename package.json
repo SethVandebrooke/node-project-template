@@ -10,7 +10,7 @@
     "generate-public-docs": "jsdoc -c ./docs/config/public-jsdoc.json -p package.json",
     "generate-walkthroughs": "docco -o ./docs/dev-docs/walkthrough/ ./src/calc.js",
     "generate-readme": "ncp ./docs/config/dev-homepage.md ./README.md && doccomentation --source \"./src/**/*.js\" --target \"./README.md\" --header \"Reference\"",
-    "generate-docs": "npm run test && npm run js-code-metric && npm run generate-dev-docs && npm run generate-public-docs && npm run generate-walkthroughs",
+    "generate-docs": "npm run tests && npm run js-code-metric && npm run generate-dev-docs && npm run generate-public-docs && npm run generate-walkthroughs",
     "tests": "jest --coverage --coverageDirectory=\"./docs/dev-docs\" --config ./jest.json",
     "build": "babel src -d temp && grunt",
     "start": "node index.js"
