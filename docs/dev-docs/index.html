@@ -57,6 +57,10 @@
 <p>Jump start to creating a nodejs project with testing, documentation, and reports.</p>
 <h2>Documentation</h2>
 <p>The out of the box documentation system uses <a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">JSDoc</a> to crawl through the src directory and generate reference documentation based on the JSDoc comments used in the source code. JSDoc is pre-configured to use the <a href="https://github.com/docstrap/docstrap" target="_blank" rel="noopener noreferrer">DocStrap</a> template which includes basic navigation and searching capabilities. By default, the navigation includes the auto generated reports and source code walkthroughs. The walkthroughs are generated using <a href="https://www.npmjs.com/package/docco" target="_blank" rel="noopener noreferrer">docco</a>.</p>
+<h4>Extending the documentation</h4>
+<p>The documentation template can be altered to fit any need, but somethings are easier to change than others.</p>
+<p>You can add additional sections and pages to the documentation and edit the existing ones by creating/editing files in the <code>./docs/dev-docs</code> directory and editing the site navigation via the <code>./docs/dev-docs-template/static/js/nav.config.js</code> config file.
+This allows you to not only add static pages but also integrate other third party or custom tools into the site!</p>
 <h4>Tutorials</h4>
 <p>Any tutorials (or guides) can be created by making Markdown, HTML, or XML files and placing them in the tutorials directory. For more information on configuring this feature, check out the JSDoc documentation: <a href="https://jsdoc.app/about-tutorials.html" target="_blank" rel="noopener noreferrer">JSDoc Tutorials</a></p>
 <h3>Reports</h3>

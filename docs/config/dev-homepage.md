@@ -5,7 +5,7 @@ Jump start to creating a nodejs project with testing, documentation, and reports
 
 The out of the box documentation system uses [JSDoc](https://jsdoc.app/) to crawl through the src directory and generate reference documentation based on the JSDoc comments used in the source code. JSDoc is pre-configured to use the [DocStrap](https://github.com/docstrap/docstrap) template which includes basic navigation and searching capabilities. By default, the navigation includes the auto generated reports and source code walkthroughs. The walkthroughs are generated using [docco](https://www.npmjs.com/package/docco).
 
-### Extending the documentation
+#### Extending the documentation
 
 The documentation template can be altered to fit any need, but somethings are easier to change than others.
 
