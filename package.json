@@ -6,10 +6,11 @@
   "scripts": {
     "dependency-audit": "npm dedupe && npm prune && npm audit",
     "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/dev-docs/metrics src",
-    "jsdoc": "jsdoc -c ./docs/config/dev-jsdoc.json",
+    "generate-dev-docs": "jsdoc -c ./docs/config/dev-jsdoc.json && npm run generate-readme",
     "generate-public-docs": "jsdoc -c ./docs/config/public-jsdoc.json -p package.json",
-    "docco": "docco -o ./docs/dev-docs/walkthrough/ ./src/calc.js",
-    "generate-docs": "npm run test && npm run js-code-metric && npm run jsdoc ",
+    "generate-walkthroughs": "docco -o ./docs/dev-docs/walkthrough/ ./src/calc.js",
+    "generate-readme": "ncp ./docs/config/dev-homepage.md ./README.md && doccomentation --source \"./src/**/*.js\" --target \"./README.md\" --header \"Reference\"",
+    "generate-docs": "npm run test && npm run js-code-metric && npm run generate-dev-docs && npm run generate-public-docs && npm run generate-walkthroughs",
     "tests": "jest --coverage --coverageDirectory=\"./docs/dev-docs\" --config ./jest.json",
     "build": "babel src -d temp && grunt",
     "start": "node index.js"
@@ -30,6 +31,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "babel-polyfill": "^6.26.0",
+    "doccomentation": "^1.1.1",
     "grunt": "^1.0.3",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^4.0.0",
@@ -37,7 +39,8 @@
     "jest": "^25.5.3",
     "jest-stare": "^2.2.0",
     "js-code-metric": "^1.0.76",
-    "jsdoc": "^3.6.4"
+    "jsdoc": "^3.6.4",
+    "ncp": "^2.0.0"
   },
   "dependencies": {}
 }

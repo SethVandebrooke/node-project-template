@@ -3,7 +3,11 @@ Jump start to creating a nodejs project with testing, documentation, and reports
 
 ## Documentation
 
-The out of the box documentation system uses [JSDoc](https://jsdoc.app/) to crawl through the src directory and generate reference documentation based on the JSDoc comments used in the source code. JSDoc is pre-configured to use the [DocStrap](https://github.com/docstrap/docstrap) template which includes basic navigation and searching capabilities. By default, the navigation includes the auto generated reports and source code walkthroughs. The walkthroughs are generated using [docco](https://www.npmjs.com/package/docco).
+The out of the box documentation system uses [JSDoc](https://jsdoc.app/) to crawl through the src directory and generate reference documentation based on the JSDoc comments used in the source code. JSDoc is pre-configured to use the [DocStrap](https://github.com/docstrap/docstrap) template which includes basic navigation and searching capabilities. By default, the navigation includes the auto generated reports and source code walkthroughs. The walkthroughs are generated using [docco](https://www.npmjs.com/package/docco). 
+
+#### Readme generation
+
+The `README.md` is auto generated using the `./docs/config/dev-homepage.md` file and [doccomentaton](https://www.npmjs.com/package/doccomentation).
 
 #### Extending the documentation
 
@@ -57,5 +61,10 @@ A big thank you to everyone who created and contributed to the following project
 - [Jest](https://jestjs.io/)
 - [Istanbul](https://istanbul.js.org/)
 - [JS Code Metric](https://www.npmjs.com/package/js-code-metric)
+- [Jest Stare](https://www.npmjs.com/package/jest-stare)
 - [Babel](https://babeljs.io/)
 - [Grunt](https://gruntjs.com/)
+- [docco](https://www.npmjs.com/package/docco)
+- [doccomentaton](https://www.npmjs.com/package/doccomentation)
+
+---
