@@ -6,7 +6,7 @@ Jump start to creating a nodejs, or javascript library, project with testing, do
 
 Out of the box...
 
-- **Eslint, using Airbnb's styleguide**, set up for maintaining well formed, but fully editable, code style rules
+- **ESLint, using Airbnb's styleguide**, set up for maintaining well formed, but fully editable, code style rules
 - **Prettier**, ready to go for consistent code formatting
 - **Grunt and Babel**, set up for pollyfilling, minifying and versioning builds
 - **Public vs Private documentation** so users see what's important and you see everything
@@ -79,6 +79,8 @@ The project has a number of out of the box commands for performing a few handy o
 
 A big thank you to everyone who created and contributed to the following projects that made this one possible!
 
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [JSDoc](https://jsdoc.app/)
 - [DocStrap](https://github.com/docstrap/docstrap)
 - [Jest](https://jestjs.io/)
