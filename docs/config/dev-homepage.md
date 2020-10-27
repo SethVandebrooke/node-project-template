@@ -6,7 +6,8 @@ Jump start to creating a nodejs project with testing, documentation, and reports
 
 Out of the box...
 
-- **Eslint and Prettier**, set up for maintaining style rules and supporting auto formatting plugins.
+- **Eslint using Airbnb's styleguide**, set up for maintaining well formed, but fully editable, code style rules.
+- **Prettier**, ready to go for consistent code formatting.
 - **Grunt and Babel**, set up for pollyfilling, minifying and versioning builds
 - **Public vs Private documentation** so users see what's important and you see everything
 - **Multi-version support** for releases and public documentation
@@ -16,6 +17,7 @@ Out of the box...
 - **Source code analysis** using JS Code Metric
 - **Automated tests** using Jest
 - **Code coverage** using Istanbul
+- **Comment coverage** using an, out of the box, custom comment coverage analysis tool
 - **Test result analysis** using Jest Stare
 - **Automated readme generation** using doccomentation
 - **Fully Exstensible** built for easy integration with other third party or custom tools
@@ -64,7 +66,7 @@ The documentation generation is already pre-configured and ready to go, all you 
 The project has a number of out of the box commands for performing a few handy operations.
 
 - `npm run start` does what you would expect: runs index.js
-- `npm run build` runs babel, converting all source code in the src directory to ES15, adds all files mentioned in the Gruntfile.js file together, and minifies the result (placing the final file in the dist directory).
+- `npm run build` runs babel, converting all source code in the src directory to ES15, adds all files (listed in `Gruntfile.js`) together, and minifies the result (outputing the final build, its minified form, and source maps for both in the dist directory).
 - `npm run dependency-audit` dedupes, prunes and fixes known dependecies issues
 - `npm run js-code-metric` generates the metric reports
 - `npm run jsdoc` generates the reference documentation
