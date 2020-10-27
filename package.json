@@ -2,7 +2,7 @@
   "name": "calculator",
   "version": "1.0.0",
   "description": "Jump start to creating a nodejs project with testing, documentation, and reports.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "dependency-audit": "npm dedupe && npm prune && npm audit",
     "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/dev-docs/metrics src",
@@ -13,8 +13,7 @@
     "generate-readme": "ncp ./docs/config/dev-homepage.md ./README.md && doccomentation --source \"./src/**/*.js\" --target \"./README.md\" --header \"Reference\"",
     "generate-docs": "npm run tests && npm run js-code-metric && npm run generate-dev-docs && npm run generate-public-docs && npm run generate-walkthroughs",
     "tests": "jest --coverage --coverageDirectory=\"./docs/dev-docs\" --config ./jest.json",
-    "build": "grunt",
-    "start": "node index.js"
+    "build": "grunt"
   },
   "repository": {
     "type": "git",
