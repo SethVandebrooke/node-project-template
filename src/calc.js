@@ -9,7 +9,7 @@
  * @example
  * var calculator = new Calc();
  */
-function Calc () {
+function Calc() {
 
     // create self reference for scoping
     var self = this;

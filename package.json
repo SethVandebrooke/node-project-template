@@ -31,6 +31,10 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "doccomentation": "^1.1.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "grunt": "^1.0.3",
     "grunt-babel": "^8.0.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -40,7 +44,8 @@
     "jest-stare": "^2.2.0",
     "js-code-metric": "^1.0.76",
     "jsdoc": "^3.6.4",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "prettier": "^2.1.2"
   },
   "dependencies": {}
 }
