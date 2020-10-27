@@ -54,22 +54,25 @@
 
 
     <article id='readme'><h1>node-project-template</h1>
-<p>Jump start to creating a nodejs project with testing, documentation, and reports.</p>
+<p>Jump start to creating a nodejs, or javascript library, project with testing, documentation, and reports.</p>
 <h2>Features</h2>
 <p>Out of the box...</p>
 <ul>
+<li><strong>ESLint, using Airbnb's styleguide</strong>, set up for maintaining well formed, but fully editable, code style rules</li>
+<li><strong>Prettier</strong>, ready to go for consistent code formatting</li>
 <li><strong>Grunt and Babel</strong>, set up for pollyfilling, minifying and versioning builds</li>
-<li><strong>Seperation between public and private documentation</strong> so users see what's important and you see everything</li>
+<li><strong>Public vs Private documentation</strong> so users see what's important and you see everything</li>
 <li><strong>Multi-version support</strong> for releases and public documentation</li>
 <li><strong>JSDoc</strong> documentation + static documentation support
 <ul>
 <li>Add static web pages to your jsdoc generated site easily</li>
 </ul>
 </li>
-<li><strong>Auto-generated Source code walkthroughs</strong> using docco</li>
+<li><strong>Source code walkthroughs</strong> using docco</li>
 <li><strong>Source code analysis</strong> using JS Code Metric</li>
 <li><strong>Automated tests</strong> using Jest</li>
 <li><strong>Code coverage</strong> using Istanbul</li>
+<li><strong>Comment coverage</strong> using a custom comment coverage analysis tool</li>
 <li><strong>Test result analysis</strong> using Jest Stare</li>
 <li><strong>Automated readme generation</strong> using doccomentation</li>
 <li><strong>Fully Exstensible</strong> built for easy integration with other third party or custom tools
@@ -108,7 +111,7 @@ This allows you to not only add static pages but also integrate other third part
 <p>The project has a number of out of the box commands for performing a few handy operations.</p>
 <ul>
 <li><code>npm run start</code> does what you would expect: runs index.js</li>
-<li><code>npm run build</code> runs babel, converting all source code in the src directory to ES15, adds all files mentioned in the Gruntfile.js file together, and minifies the result (placing the final file in the dist directory).</li>
+<li><code>npm run build</code> runs babel, converting all source code in the src directory to ES15, adds all files (listed in <code>Gruntfile.js</code>) together, and minifies the result (outputing the final build, its minified form, and source maps for both in the dist directory).</li>
 <li><code>npm run dependency-audit</code> dedupes, prunes and fixes known dependecies issues</li>
 <li><code>npm run js-code-metric</code> generates the metric reports</li>
 <li><code>npm run jsdoc</code> generates the reference documentation</li>
@@ -119,6 +122,8 @@ This allows you to not only add static pages but also integrate other third part
 <h3>Credit</h3>
 <p>A big thank you to everyone who created and contributed to the following projects that made this one possible!</p>
 <ul>
+<li><a href="https://eslint.org/" target="_blank" rel="noopener noreferrer">ESLint</a></li>
+<li><a href="https://prettier.io/" target="_blank" rel="noopener noreferrer">Prettier</a></li>
 <li><a href="https://jsdoc.app/" target="_blank" rel="noopener noreferrer">JSDoc</a></li>
 <li><a href="https://github.com/docstrap/docstrap" target="_blank" rel="noopener noreferrer">DocStrap</a></li>
 <li><a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a></li>
