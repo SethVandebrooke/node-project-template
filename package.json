@@ -13,7 +13,7 @@
     "generate-readme": "ncp ./docs/config/dev-homepage.md ./README.md && doccomentation --source \"./src/**/*.js\" --target \"./README.md\" --header \"Reference\"",
     "generate-docs": "npm run tests && npm run js-code-metric && npm run generate-dev-docs && npm run generate-public-docs && npm run generate-walkthroughs",
     "tests": "jest --coverage --coverageDirectory=\"./docs/dev-docs\" --config ./jest.json",
-    "build": "babel src -d temp && grunt",
+    "build": "grunt",
     "start": "node index.js"
   },
   "repository": {
@@ -28,12 +28,11 @@
   },
   "homepage": "https://github.com/SethVandebrooke/node-project-template#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
-    "babel-polyfill": "^6.26.0",
     "doccomentation": "^1.1.1",
     "grunt": "^1.0.3",
+    "grunt-babel": "^8.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^4.0.0",
     "ink-docstrap": "^1.3.2",

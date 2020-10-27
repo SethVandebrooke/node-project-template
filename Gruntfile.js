@@ -18,20 +18,36 @@ module.exports = function(grunt) {
       concat: {
         dist: {
           src: [
-              'temp/calc.js',
+              'calc.js',
             ],
           dest: 'dist/<%= pkg.name %>-v<%= pkg.version %>.js',
         },
+      },
+
+      babel: {
+        options: {
+          sourceMap: true,
+          presets: ['@babel/preset-env']
+        },
+        dist: {
+          files: {
+            'dist/<%= pkg.name %>-v<%= pkg.version %>.js': 'dist/<%= pkg.name %>-v<%= pkg.version %>.js'
+          }
+        }
       }
 
     });
   
+    // Load the pluigin that concats multiple files together into a single one.
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    // Load the plugin that ensures browser compatibility.
+    grunt.loadNpmTasks('grunt-babel');
   
     // Default task(s).
-    grunt.registerTask('default', ['concat','uglify']);
+    grunt.registerTask('default', ['concat', 'babel', 'uglify']);
   
   };
