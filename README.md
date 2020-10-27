@@ -1,6 +1,6 @@
 # node-project-template
 
-Jump start to creating a nodejs project with testing, documentation, and reports.
+Jump start to creating a nodejs, or javascript library, project with testing, documentation, and reports.
 
 ## Features
 
@@ -92,32 +92,37 @@ A big thank you to everyone who created and contributed to the following project
 
 ---
 
-
 <a name="Calc"></a>
 
 ### Calc
-**Kind**: global class  
 
-* [Calc](#Calc)
-    * [new Calc()](#new_Calc_new)
-    * [.add(a, b)](#Calc+add) ⇒ <code>number</code>
-    * [.subtract(a, b)](#Calc+subtract) ⇒ <code>number</code>
+**Kind**: global class
+
+- [Calc](#Calc)
+  - [new Calc()](#new_Calc_new)
+  - [.add(a, b)](#Calc+add) ⇒ <code>number</code>
+  - [.subtract(a, b)](#Calc+subtract) ⇒ <code>number</code>
 
 <a name="new_Calc_new"></a>
 
 #### new Calc()
+
 Calcualtor instance
 
-**Example**  
+**Example**
+
 ```js
 var calculator = new Calc();
 ```
+
 <a name="Calc+add"></a>
 
 #### calc.add(a, b) ⇒ <code>number</code>
+
 Add two numbers together
 
-**Kind**: instance method of [<code>Calc</code>](#Calc)  
+**Kind**: instance method of [<code>Calc</code>](#Calc)
+
 <table>
   <thead>
     <tr>
@@ -134,16 +139,21 @@ Add two numbers together
     </tr>  </tbody>
 </table>
 
-**Example**  
+**Example**
+
 ```js
-var calculator = new Calc();calculator.add(2, 2); // 4
+var calculator = new Calc();
+calculator.add(2, 2); // 4
 ```
+
 <a name="Calc+subtract"></a>
 
 #### calc.subtract(a, b) ⇒ <code>number</code>
+
 Subtract one number from another
 
-**Kind**: instance method of [<code>Calc</code>](#Calc)  
+**Kind**: instance method of [<code>Calc</code>](#Calc)
+
 <table>
   <thead>
     <tr>
@@ -160,7 +170,9 @@ Subtract one number from another
     </tr>  </tbody>
 </table>
 
-**Example**  
+**Example**
+
 ```js
-var calculator = new Calc();calculator.subtract(4, 2) // 2
+var calculator = new Calc();
+calculator.subtract(4, 2); // 2
 ```

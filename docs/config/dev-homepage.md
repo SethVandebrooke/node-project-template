@@ -1,6 +1,6 @@
 # node-project-template
 
-Jump start to creating a nodejs project with testing, documentation, and reports.
+Jump start to creating a nodejs, or javascript library, project with testing, documentation, and reports.
 
 ## Features
 
