@@ -22,7 +22,7 @@
         }
     },
     "opts": {
-        "template": "./docs/public-docs-template",
+        "template": "./docs/templates/public-docs-template",
         "encoding": "utf8",
         "destination": "./docs/public-docs/",
         "recurse": true,

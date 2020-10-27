@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <title>Comment Coverage</title>
+
+    <style>
+        .clickable {
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="container-fluid p-5">
+        <div class="row">
+            <div class="col-md-2 p-5">
+                <p @click="openPage('home','Overview')" class="clickable">Overview</p>
+                <p v-for="file in files" @click="openPage('file', file.fileName, file)" class="clickable"> 
+                    {{ file.fileName }} 
+                </p>
+            </div>
+            <div class="col-md-10">
+                <h1 class="display-2">{{ page.title }}</h1>
+                <div v-show="page.id == 'home'">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="pieChart1"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <canvas id="pieChart2"></canvas>
+                        </div>
+                    </div>
+                    <canvas id="overview-chart"></canvas>
+                </div>
+                <div v-show="page.id == 'file'">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="pieChart3"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <canvas id="pieChart4"></canvas>
+                        </div>
+                    </div>
+                    <p>Lines that should or could be commented:</p>
+                    <p v-for="line in page.data.uncommentedLines">
+                        Line {{ line.line }}: <code>{{ line.code }}</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/chart.min.js"></script>
+    <script src="./js/vue.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

@@ -6,6 +6,7 @@
   "scripts": {
     "dependency-audit": "npm dedupe && npm prune && npm audit",
     "js-code-metric": "./node_modules/.bin/js-code-metric -r -d ./docs/dev-docs/metrics src",
+    "comment-coverage": "node ./docs/commentCoverage.cli.js \"./src/\" --html \"./docs/dev-docs/\"",
     "generate-dev-docs": "jsdoc -c ./docs/config/dev-jsdoc.json && npm run generate-readme",
     "generate-public-docs": "jsdoc -c ./docs/config/public-jsdoc.json -p package.json",
     "generate-walkthroughs": "docco -o ./docs/dev-docs/walkthrough/ ./src/calc.js",
