@@ -57,10 +57,6 @@ By defualt, the pre-installed and configured testing suite is Jest. This can be 
 - Jest allows for multiple test writting styles, including Jasmine.
 - Jest is especially good at clearly pointing out context when things break, better than anything else I've used for NodeJS.
 
-### Generating the documentation
-
-The documentation generation is already pre-configured and ready to go, all you have to do is run the following command in the project directory: `npm run generate-docs`
-
 ## Project Commands
 
 The project has a number of out of the box commands for performing a few handy operations.
@@ -70,8 +66,11 @@ The project has a number of out of the box commands for performing a few handy o
 - `npm run dependency-audit` dedupes, prunes and fixes known dependecies issues
 - `npm run js-code-metric` generates the metric reports
 - `npm run jsdoc` generates the reference documentation
-- `npm run test` runs all tests and generates code coverage report
-- `npm run generate-docs` runs the last three commands, fully generating the documentation website
+- `npm run tests` runs all tests and generates code coverage report
+- `npm run generate-readme` runs all tests and generates code coverage report
+- `npm run generate-dev-docs` runs jsdoc for building the internal documentation website for developers and updates the readme file
+- `npm run generate-public-docs` runs jsdoc for building the public documentation website for users
+- `npm run generate-docs` runs the last 6 commands, updating all documentation
 
 ---
 
